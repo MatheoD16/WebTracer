@@ -1,0 +1,793 @@
+/* Updated CSS with classes and government style */
+
+/* Reset some default styles */
+
+.stats {
+    border-radius: 50% 20% / 10% 40%;
+    background-color: #0053a0;
+    color: white;
+    padding: 10px 10px 10px 30px;
+    width: fit-content;
+}
+
+body, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style for the navigation bar */
+.navbar {
+    background-color: #0053a0; /* Blue color often used in French government websites */
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Style for the buttons */
+.nav-btn {
+    background-color: #0073cf; /* Slightly lighter blue for buttons */
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    margin: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.del-btn{
+    background-color: #cf0000; /* Slightly lighter blue for buttons */
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    margin: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.add-btn{
+    background-color: #10e732; /* Slightly lighter blue for buttons */
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    margin: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+/* Style for the links within buttons */
+.nav-btn a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Style for the logout button */
+#logout {
+    background-color: #d9534f; /* Red color for logout button */
+}
+
+/* Add some hover effect for buttons */
+.nav-btn:hover {
+    background-color: #0053a0; /* Darker blue on hover */
+}
+
+/* Add some styling for the active link */
+.nav-btn a.active {
+    border-bottom: 2px solid #fff;
+}
+
+/* Style for the main buttons container */
+.main-buttons {
+    display: flex;
+}
+
+/* Style for the authentication buttons container */
+.auth-buttons {
+    display: flex;
+    align-items: center;
+}
+
+/* CSS for the footer */
+
+/* Style for the main footer container */
+.footer {
+    background-color: #0053a0;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed; /* Changer à 'absolute' si vous préférez une position absolue */
+    bottom: 0;
+    width: 100%;
+}
+
+/* Style for the content within the footer */
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Style for the links within the footer */
+.footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Optional: Add some padding and margin for better spacing */
+.footer p {
+    margin: 0;
+    padding: 5px;
+}
+
+
+/* CSS for the contact form */
+
+/* Style for the main form container */
+.contact-form {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for the form header */
+.form-header {
+    margin-top: 2rem;
+}
+
+/* Style for form groups (labels and inputs) */
+.form-group {
+    margin-bottom: 15px;
+}
+
+/* Style for labels */
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Style for inputs and textarea */
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Style for the submit button */
+.form-group button {
+    padding: 10px 20px;
+    background-color: #0073cf; /* Slightly lighter blue for buttons */
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.form-group button a{
+    color:#fff;
+    text-decoration: none;
+}
+
+/* Add some hover effect for the submit button */
+.form-group button:hover {
+    background-color: #0053a0; /* Darker blue on hover */
+}
+
+
+menu{
+    padding:0;
+    margin: 0;
+}
+
+/* CSS for the about page */
+
+/* Style for the main about container */
+.about-container {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for the about title */
+.about-title {
+    text-align: center;
+}
+
+/* Style for the about subtitle */
+.about-subtitle {
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Style for the about description */
+.about-description {
+    text-align: center;
+    line-height: 1.5;
+}
+
+/* CSS for the login page */
+
+/* Style for the main login container */
+.wrap {
+    max-width: 400px;
+    margin: 2rem auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for the login form */
+.login-form {
+    text-align: center;
+}
+
+/* Style for the form header */
+.form-header h3 {
+    margin-top: 0;
+    margin-bottom: 15px; /* Add margin-bottom for spacing */
+    color: #333;
+}
+
+/* Style for form groups (inputs and checkbox) */
+.form-group {
+    margin-bottom: 15px;
+}
+
+/* Style for form inputs */
+.form-input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Style for the form check (remember me) */
+.form-check {
+    display: flex;
+    align-items: center;
+}
+
+/* Add margin between the checkbox and its label */
+.form-check-input {
+    margin-right: 5px;
+}
+
+/* Style for the login button */
+.form-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Add some hover effect for the login button */
+.form-button:hover {
+    background-color: #0056b3;
+}
+
+/* Style for the form footer */
+.form-footer {
+    margin-top: 15px;
+    color: #333;
+}
+
+/* Style for the link within the form footer */
+.form-footer a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+/* Add some hover effect for the link within the form footer */
+.form-footer a:hover {
+    text-decoration: underline;
+}
+
+/* CSS for the home page */
+
+/* Style for the main home container */
+.home-container {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for the user welcome section */
+.user-welcome {
+    text-align: center;
+}
+
+.avatarcom {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    object-fit: cover;
+}
+
+/* Style for the user avatar */
+.avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    object-fit: cover; /* Add this line to maintain aspect ratio and crop if needed */
+}
+
+/* Style for the additional content section */
+.additional-content {
+    margin-top: 20px;
+}
+
+/* Style for the additional content paragraphs */
+.additional-content p {
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+/* Add this CSS to your stylesheet */
+
+.navbar {
+    position: relative;
+}
+
+.user-menu {
+    position: relative;
+    display: inline-block;
+}
+
+#user-btn {
+    padding: 10px 20px; /* Ajustez la taille du bouton selon vos préférences */
+}
+
+.user-dropdown {
+    display: none;
+    position: absolute;
+    top: 100%; /* Position the dropdown below the button */
+    right: 0; /* Align the dropdown to the right */
+    width: 200px; /* Ajustez la largeur du dropdown selon vos préférences */
+    background-color: #fff; /* Add your preferred background color */
+    border: 1px solid #ccc; /* Add a border */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a box shadow */
+    z-index: 1; /* Ensure the dropdown appears above other elements */
+}
+
+
+#user-btn span {
+    margin-left: 10px; /* Ajustez l'écart entre l'avatar et le nom */
+}
+
+#user-btn img {
+    max-width: 50px; /* Set the maximum width for the avatar image */
+    border-radius: 50%; /* Make the avatar image round */
+    width:40%;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    #user-btn {
+        padding: 10px; /* Ajustez la taille du bouton pour les petits écrans */
+    }
+
+    .user-dropdown {
+        width: 100%; /* Ajustez la largeur du dropdown pour les petits écrans */
+        box-sizing: border-box; /* Assurez-vous que la largeur inclut les bordures et les rembourrages */
+    }
+
+    #user-btn span {
+        display: none; /* Masquer le nom sur les petits écrans */
+    }
+}
+
+.imgscene {
+    margin-left: 2%;
+    margin-right: 2%;
+    width: 96%;
+}
+
+/* Style for the main scenes container */
+.scenes-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for the scenes table */
+.scenes-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+/* Style for table headers */
+.scenes-table th {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    text-align: left;
+}
+
+/* Style for table rows */
+.scenes-table td {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+/* Style for the actions buttons */
+.action-button {
+    padding: 8px 12px;
+    margin-right: 5px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Add some hover effect for the action buttons */
+.action-button:hover {
+    background-color: #0056b3;
+}
+
+/* Specific style for the view button */
+.view-button {
+    background-color: #28a745; /* Green color for view button */
+}
+
+/* Specific style for the edit button */
+.edit-button {
+    background-color: #ffc107; /* Yellow color for edit button */
+}
+
+/* Specific style for the delete button */
+.delete-button {
+    background-color: #dc3545; /* Red color for delete button */
+}
+
+
+/* CSS for the scenes page */
+
+/* ... (styles for the scenes-container, scenes-table, th, td, action-button, etc.) */
+
+/* Style for the thumbnail image */
+.thumbnail {
+    max-width: 100px; /* Définir la taille maximale de l'image */
+    border: 1px solid #ccc; /* Ajouter une bordure aux images */
+    cursor: pointer;
+}
+
+/* Ajouter une transition pour un effet d'agrandissement en douceur */
+.thumbnail:hover {
+    transform: scale(1.2); /* Agrandir l'image au survol */
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Add this to your existing stylesheet */
+.modal-container {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.9);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 80%;
+    max-height: 80%;
+    margin-top: 5%;
+}
+
+.close-button {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* CSS for the home page */
+
+/* Style for the main home container */
+.home-container {
+    text-align: center;
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for the logo image */
+.logo {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* Style for the paragraph */
+.home-container p {
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
+/* Style for the link within the paragraph */
+.home-container a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Add some hover effect for the links */
+.home-container a:hover {
+    text-decoration: underline;
+}
+
+/* CSS for the profile page */
+
+/* Style for the main profile title */
+.profile-title {
+    text-align: center;
+    color: #333;
+}
+
+/* Style for the buttons container */
+.button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Style for the buttons */
+.btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-right: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Add some hover effect for the buttons */
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Style for the active button */
+.btn.active {
+    background-color: #0056b3;
+}
+
+/* Style for the profile container */
+.profile-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Style for the avatar container */
+.avatar-container {
+    margin-bottom: 20px;
+}
+
+/* Style for the avatar image */
+.avatar {
+    max-width: 150px;
+    height: auto;
+    border-radius: 50%;
+}
+
+/* Style for the profile information */
+.profile-info p {
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+
+/* Style for the hidden class */
+.hidden {
+    display: none;
+}
+
+#favorite-scenes {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.favorite-scenes-container {
+    max-width: 600px; /* Ajustez selon vos besoins */
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.favorite-scenes-container h2 {
+    color: #333;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.favorite-scenes-container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.favorite-scenes-container li {
+    margin-bottom: 10px;
+}
+
+.favorite-scenes-container button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none; /* Supprime la décoration du lien */
+    display: inline-block; /* Assure que le bouton s'affiche en ligne */
+}
+
+.favorite-scenes-container button:hover {
+    background-color: #0056b3;
+}
+
+/* Ajoutez du style pour l'effet de transition si nécessaire */
+.favorite-scenes-container button {
+    transition: background-color 0.3s ease-in-out;
+}
+
+#commentaires {
+    margin-top: 20px;
+    text-align: center;
+}
+/* Ajoutez vos styles CSS ici */
+.commentaires-container {
+    max-width: 600px; /* Ajustez selon vos besoins */
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.commentaires-container h2 {
+    color: #333;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.list-group {
+    margin: 0;
+    padding: 0;
+}
+
+.list-group-item {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.comment-title {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.comment-text {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.comment-dates {
+    font-size: 12px;
+    color: #777;
+}
+
+.comment-date-added {
+    margin-right: 10px;
+}
+
+.comment-date-updated {
+    font-style: italic;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #333;
+}
+
+#avatarForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#avatarInput {
+    margin-bottom: 15px;
+}
+
+#confirmBtn {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#confirmBtn:hover {
+    background-color: #45a049;
+}

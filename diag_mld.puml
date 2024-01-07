@@ -1,0 +1,65 @@
+@startuml
+'https://plantuml.com/class-diagram
+class Utilisateur {
+<b>id : INTEGER
+..
+nom : VARCHAR
+email : VARCHAR
+mdp : VARCHAR
+admin : boolean
+avatar : VARCHAR
+}
+
+class Commentaire {
+<b>id : INTEGER
+..
+titre : VARCHAR
+texte : VARCHAR
+date_ajout : DATETIME
+date_update : DATETIME
+..
+<b>id_utilisateur : INTEGER
+<b>id_scene : INTEGER
+}
+
+class Scene {
+<b>id : INTEGER
+..
+nom : VARCHAR
+equipe : VARCHAR
+description : VARCHAR
+date_ajout : DATETIME
+scene : VARCHAR
+lien_image : VARCHAR
+lien_vignette : VARCHAR
+lien_executable : VARCHAR
+..
+<b>id_utilisateur : INTEGER
+}
+
+class Note{
+note: INTEGER
+..
+<b>id_utilisateur : INTEGER
+<b>id_scene : INTEGER
+}
+
+class Favoris {
+<b>id_utilisateur : INTEGER
+<b>id_scene : INTEGER
+}
+
+
+Scene *- Note
+
+Utilisateur  *- "1" Note
+
+Scene *- "*" Favoris
+
+Utilisateur *- "*" Favoris
+
+
+
+
+
+@enduml

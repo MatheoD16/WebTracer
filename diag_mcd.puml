@@ -1,0 +1,47 @@
+@startuml
+'https://plantuml.com/class-diagram
+class Utilisateur {
+nom : String
+email : String
+mdp : String
+admin : boolean
+avatar : String
+}
+
+class Commentaire {
+titre : String
+texte : String
+date_ajout : Date
+date_update : Date
+}
+
+class Scene {
+nom : String
+equipe : String
+description : String
+date_ajout : Date
+scene : String
+lien_image : String
+lien_vignette : String
+lien_executable : String
+}
+
+class Note{
+note: int
+}
+
+class Favoris {
+}
+(Scene, Utilisateur) .. Favoris
+
+(Scene, Utilisateur) ..  Note
+
+Scene "1" -- "0,*" Utilisateur : < ajoute
+
+Utilisateur "0,*" -- "1" Commentaire : > publie
+
+Scene "0,*" -- "1" Commentaire : > possede
+
+
+
+@enduml
